@@ -1,0 +1,12 @@
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
+
+#TODO: Add 'check' as fs_mgr_flags with data partition.
+# Currently we dont have e2fsck compiled. So fs check would failed.
+
+# Non-A/B fstab.qcom charger
+#<src>                                   <mnt_point>            <type> <mnt_flags and options>                          <fs_mgr_flags>
+#/dev/block/platform/soc/c0c4000.sdhci/by-name/cache      /cache                 ext4   nosuid,nodev,noatime,barrier=1                           wait
+#/dev/block/platform/soc/c0c4000.sdhci/by-name/persist    /mnt/vendor/persist    ext4   noatime,nosuid,nodev,barrier=1                   wait
+/dev/block/platform/soc/c0c4000.sdhci/by-name/asdf      /asdf                 ext4   nosuid,nodev,noatime,barrier=1                           wait
