@@ -76,7 +76,4 @@ TARGET_USERIMAGES_USE_EXT4 := true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/public
 
-#VNDK
-PRODUCT_TARGET_VNDK_VERSION := 27
-
 -include vendor/asus/croissant/BoardConfigVendor.mk
