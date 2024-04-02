@@ -1,6 +1,8 @@
 DEVICE_PATH := device/asus/croissant
 BOARD_VENDOR := asus
 
+BUILD_BROKEN_DUP_RULES := true
+
 #ARCHITECTURE
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
