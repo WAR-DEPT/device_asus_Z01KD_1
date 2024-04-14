@@ -752,6 +752,6 @@
         <fqname>@1.0::IRTPService/imsrtpservice</fqname>
     </hal>
     <sepolicy>
-        <version>28.0</version>
+        <version>30.0</version>
     </sepolicy>
 </manifest>
