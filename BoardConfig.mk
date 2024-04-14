@@ -44,10 +44,9 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00008000
 BOARD_RAMDISK_OFFSET := 0x01000000 
 BOARD_TAGS_OFFSET := 0x00000100
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := zImage
 
-TARGET_KERNEL_CONFIG := ze554kl-user-sdm660-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/asus/croissant
+TARGET_PREBUILT_KERNEL := device/asus/croissant-kernel/zImage
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyMSM0 
@@ -61,6 +60,7 @@ BOARD_KERNEL_CMDLINE := service_locator.enable=1
 BOARD_KERNEL_CMDLINE := swiotlb=1 
 BOARD_KERNEL_CMDLINE := androidboot.configfs=true 
 BOARD_KERNEL_CMDLINE := androidboot.usbcontroller=a800000.dwc3 
+
 
 #PARTITION
 # Partitions - Boot
