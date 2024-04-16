@@ -1,7 +1,7 @@
 #API
 PRODUCT_SHIPPING_API_LEVEL= 25
 
-TARGET_PREBUILT_KERNEL := kernel/asus/croissant
+TARGET_PREBUILT_KERNEL := device/asus/croissant-kernel/zImage
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
 
