@@ -28,6 +28,7 @@
 #
 
 on early-init
+   
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system
     mkdir /dsp 0771 media media
@@ -440,7 +441,6 @@ on property:init.svc.zygote=restarting
     stop ppd
 
 on charger
-    load_system_props
     start qcom-post-boot
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
