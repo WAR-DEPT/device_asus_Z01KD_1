@@ -9,7 +9,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := asus
-PRODUCT_DEVICE := croissant
+PRODUCT_DEVICE := Z01KD_1
 PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := lineage_croissant
 PRODUCT_MODEL := ASUS_Z01KD
