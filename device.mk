@@ -1,5 +1,5 @@
 
-TARGET_PREBUILT_KERNEL := device/asus/croissant/zImage
+TARGET_PREBUILT_KERNEL := device/asus/Z01KD_1/zImage
 PRODUCT_COPY_FILES += \
     $(TARGET_PREBUILT_KERNEL):kernel
     
