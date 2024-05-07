@@ -213,12 +213,12 @@ on boot
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
 
     # Allow access to emmc rawdump block partition and dload sysfs node
-    chown root system /dev/block/bootdevice/by-name/rawdump -p /dev/block/
-    chmod 0660 /dev/block/bootdevice/by-name/rawdump -p /dev/block/
+    chown root system /dev/block/bootdevice/by-name/rawdump 
+    chmod 0660 /dev/block/bootdevice/by-name/rawdump 
     chown root system /sys/kernel/dload/emmc_dload
     chmod 0660 /sys/kernel/dload/emmc_dload
-    chown root system /dev/block/bootdevice/by-name/ramdump -p /dev/block/
-    chmod 0660 /dev/block/bootdevice/by-name/ramdump -p /dev/block/
+    chown root system /dev/block/bootdevice/by-name/ramdump 
+    chmod 0660 /dev/block/bootdevice/by-name/ramdump 
     chown root system /sys/kernel/dload/dload_mode
     chmod 0660 /sys/kernel/dload/dload_mode
 
@@ -522,7 +522,7 @@ on property:sys.boot_completed=1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
-<<<<<<< HEAD
+ HEAD
     start modem-check
 
 on property:persist.radio.atfwd.start=false
@@ -530,8 +530,8 @@ on property:persist.radio.atfwd.start=false
 
 on property:radio.atfwd.start=false
     stop atfwd
-=======
->>>>>>> SDM636.LA.2.1-21200-STD.PROD-3
+
+SDM636.LA.2.1-21200-STD.PROD-3
 
 # corefile limit
 on property:persist.debug.trace=1
@@ -660,7 +660,7 @@ service ftmd /system/bin/logwrapper /system/vendor/bin/ftmdaemon
 
 service port-bridge /system/vendor/bin/port-bridge
     class main
-    user radio system
+
     group radio system inet
     disabled
     oneshot
@@ -1266,7 +1266,6 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
 
 on charger
     setprop persist.sys.usb.config mass_storage
-    load_system_props
     start qcom-post-boot
 
 #add poweroffhandler
@@ -1321,7 +1320,7 @@ service seemp_healthd /vendor/bin/seemp_healthd
     user system
     group system
 
-<<<<<<< HEAD
+ HEAD
 service hostapd_cmd /system/vendor/bin/hostapd_cmd
     class main
     group system wifi
@@ -1331,10 +1330,10 @@ service hostapd_cmd /system/vendor/bin/hostapd_cmd
 
 on property:persist.sys.wifi.hostapd.cmd=*
     start hostapd_cmd
-=======
+
 service power_off_alarm /vendor/bin/power_off_alarm
     class core
     group system
     disabled
     oneshot
->>>>>>> SDM636.LA.2.1-21200-STD.PROD-3
+ SDM636.LA.2.1-21200-STD.PROD-3
