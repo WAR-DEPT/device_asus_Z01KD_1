@@ -1,0 +1,4 @@
+#============= healthd ==============
+allow healthd healthd:capability mknod;
+allow healthd device:chr_file { create open write };
+allow healthd device:dir { add_name remove_name write };

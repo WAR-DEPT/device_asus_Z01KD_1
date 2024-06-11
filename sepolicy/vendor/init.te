@@ -1,0 +1,4 @@
+#============= init ==============
+set_prop(init, default_prop)
+set_prop(init, system_radio_prop)
+allow init kernel:security setcheckreqprot;

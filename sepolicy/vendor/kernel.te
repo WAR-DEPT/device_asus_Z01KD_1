@@ -1,0 +1,3 @@
+#============= kernel ==============
+allow kernel unlabeled:file { open read };
+allow kernel kernel:security setcheckreqprot;
