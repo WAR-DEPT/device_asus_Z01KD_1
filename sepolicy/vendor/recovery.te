@@ -2,7 +2,7 @@
 allow recovery media_rw_data_file:dir { add_name getattr write };
 allow recovery rootfs:dir { add_name create write };
 allow recovery system_data_file:dir read;
-allow recovery media_rw_data_file:file { create getattr relabelfrom relabelto setattr write };
+allow recovery media_rw_data_file:file { add_name create getattr relabelfrom relabelto setattr write };
 allow recovery rootfs:file { create write };
 allow recovery rootfs:lnk_file create;
 set_prop(recovery, default_prop)
