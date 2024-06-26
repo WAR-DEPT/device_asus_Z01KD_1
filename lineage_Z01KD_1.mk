@@ -22,5 +22,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="WW_Phone-user 8.0.0 OPR1.170
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := asus/WW_Phone/ASUS_Z01KD_1:8.0.0/OPR1.170623.032/15.0610.1909.39-0:user/release-keys
 
-#Selinux
-SELINUX_IGNORE_NEVERALLOWS := true
